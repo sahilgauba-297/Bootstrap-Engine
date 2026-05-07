@@ -63,9 +63,9 @@ Where:
 
 We convert discount factors back into continuously compounded zero rates:
 
-\[
+$$
 r(t) = -\frac{\ln D(t)}{t}
-\]
+$$
 
 This produces the **zero-coupon yield curve**, which is the true term structure of interest rates.
 
