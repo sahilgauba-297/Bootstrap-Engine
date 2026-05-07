@@ -6,7 +6,7 @@ This project builds a **live U.S. Treasury yield curve pipeline** using market d
 
 ---
 
-##Data Pipeline
+## Data Pipeline
 
 We start with real market data from FRED:
 
