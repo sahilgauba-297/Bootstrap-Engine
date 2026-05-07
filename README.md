@@ -98,17 +98,9 @@ This gives a **live Treasury zero curve snapshot**.
 
 ## What This System Represents
 
-We have built a simplified but functional **rates curve engine**:
+We have built a simplified **rates curve engine**:
 
 > Market yields → discount factors → zero rates → yield curve visualization
-
-This is the core pipeline used in:
-
-- fixed income trading desks  
-- risk management systems  
-- macro interest rate models  
-- bond pricing engines  
-
 
 ---
 
