@@ -36,9 +36,9 @@ This gives us a **single point-in-time yield curve**.
 
 Market yields are quoted in percentage form:
 
-\[
+$$
 r = \frac{\text{yield}}{100}
-\]
+$$
 
 This is necessary because all financial formulas operate on decimal rates.
 
@@ -48,9 +48,9 @@ This is necessary because all financial formulas operate on decimal rates.
 
 We convert yields into present value multipliers using continuous compounding:
 
-\[
+$$
 D(t) = e^{-r(t)t}
-\]
+$$
 
 Where:
 - \(D(t)\) = discount factor
