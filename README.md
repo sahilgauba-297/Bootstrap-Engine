@@ -1,4 +1,4 @@
-# 📈 Treasury Yield Curve Engine
+# Treasury Yield Curve Engine
 
 ## Overview
 
@@ -6,7 +6,7 @@ This project builds a **live U.S. Treasury yield curve pipeline** using market d
 
 ---
 
-## 🔄 Data Pipeline
+##Data Pipeline
 
 We start with real market data from FRED:
 
@@ -21,7 +21,7 @@ These are **constant-maturity Treasury yields updated daily**.
 
 ---
 
-## 🏗️ Step 1: Build Yield Curve Snapshot
+## Step 1: Build Yield Curve Snapshot
 
 We extract the latest available observation and construct a cross-sectional curve:
 
@@ -32,7 +32,7 @@ This gives us a **single point-in-time yield curve**.
 
 ---
 
-## 🔢 Step 2: Convert Yields to Decimal Form
+## Step 2: Convert Yields to Decimal Form
 
 Market yields are quoted in percentage form:
 
@@ -44,7 +44,7 @@ This is necessary because all financial formulas operate on decimal rates.
 
 ---
 
-## 💰 Step 3: Construct Discount Factors
+## Step 3: Construct Discount Factors
 
 We convert yields into present value multipliers using continuous compounding:
 
@@ -59,7 +59,7 @@ Where:
 
 ---
 
-## 📉 Step 4: Build Zero Curve
+##  Step 4: Build Zero Curve
 
 We convert discount factors back into continuously compounded zero rates:
 
@@ -71,9 +71,9 @@ This produces the **zero-coupon yield curve**, which is the true term structure 
 
 ---
 
-## 📊 Output Structure
+## Output Structure
 
-The final dataset contains:
+The final data contains:
 
 | Column | Meaning |
 |---|---|
@@ -85,7 +85,7 @@ The final dataset contains:
 
 ---
 
-## 📈 Visualization
+## Visualization
 
 We plot:
 
@@ -96,7 +96,7 @@ This gives a **live Treasury zero curve snapshot**.
 
 ---
 
-## 🧠 What This System Represents
+## What This System Represents
 
 We have built a simplified but functional **rates curve engine**:
 
@@ -109,19 +109,10 @@ This is the core pipeline used in:
 - macro interest rate models  
 - bond pricing engines  
 
----
-
-## ⚙️ Current Capability
-
-✔ Pull live Treasury data from FRED  
-✔ Build yield curve snapshot  
-✔ Convert yields → discount factors  
-✔ Derive zero rate curve  
-✔ Plot term structure  
 
 ---
 
-## 🚀 Next Direction
+## Future Idea
 
 The current system is a **discrete curve model**.
 
